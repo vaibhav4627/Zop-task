@@ -1,0 +1,9 @@
+version: '3'
+services:
+  db:
+    image: sqlite:latest
+    container_name: sqlite-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/data
